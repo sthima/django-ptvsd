@@ -1,0 +1,15 @@
+language: python
+python:
+- '3.5'
+install:
+- pip install -r requirements.txt
+script:
+- echo 'Running Scripts'
+deploy:
+  provider: pypi
+  user: drbeckert
+  password:
+    secure: UtkOpC5WQvHjJmK70Jvg+WXCO4ORtpef4xyLTUlHJBuTO2oZMO8A0pHvcCaPeltVpQUUtp1JAVaNYJoamWZdjIBPz11Gb0Wy5a2saN3XeLEmfsHYoL/ZHq+A/ylbDG9zBVaUslfgy24fxFOKdHauMGhPMSzTh2mb1B72brsV2twH9HJFOpMjSnApLmRnW2G0zCMkA8WXfqrSaH5vSCI5ga2IgOiWU3WXU1NyqjqsPN+ILCZRF4U6MlzQeIp+Ja1T7Xt5wadhHaED1fn5QVo0g+mDpHafaptBbHp4BQYxXqMx/9JLlZ/Fj520dTX+uEtZM3Uf/ncr3qM9PWU3Q5drbEb10zRlU9t2d67dT5eo7fekwCL7er9M5nc2GS4dlXx8CkQ7uOf/keTdlSxZ7nhQ2cWdRx8XCJ4I6V6IU+MzPveL6eTWxEjirnSFUzS+W1bJUqVGGrM8FbZrYl/FH/MU6Fu6MLwgAp1NcfnKwzRyY95OO88/dwehcvOBsfDYLuF8VvEptJn/cLlv3Jc8gvP/grtJmVzYoxi9nGkvLJurJWYPVJmXLGgW/adTjTndX/VMBwPw9fP/XWMTdpKyBdaGJmaMcE/+J65BmKYn7Wv1wgwiINq4Y4GrHaiYzB2mRE3anuoTwz2tLLjmgkFwR9Z7cdbiDKN21ImYq1OlpzdAmwg=
+  on:
+    branch: master
+    tags: true
