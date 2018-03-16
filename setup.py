@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-ptvsd',
-    version='0.0.0',
+    version='0.0.1',
     description='A Wrapper to Visual Studio remote debugging server for python',
     long_description=README,
     url='https://github.com/sthima/django-ptvsd',
